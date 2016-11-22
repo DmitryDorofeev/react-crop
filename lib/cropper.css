@@ -1,9 +1,9 @@
-.Cropper {
+:global(.Cropper) {
   position: relative;
   display: inline-block;
 }
 
-.box {
+:global(.box) {
   position: absolute;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   right: 0;
 }
 
-.Cropper-box {
+:global(.Cropper-box) {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,12 +21,12 @@
   border: #fff solid 1px;
 }
 
-.Cropper-canvas {
+:global(.Cropper-canvas) {
   visibility: hidden;
   position: absolute;
 }
 
-.Cropper-image {
+:global(.Cropper-image) {
   vertical-align: middle;
   max-width: 100%;
   position: relative;
@@ -34,7 +34,7 @@
   left: 50%;
 }
 
-.resize-handle {
+:global(.resize-handle) {
   position: absolute;
   background-color: #ECEEEF;
   border: #8295AB solid 1px;
@@ -43,38 +43,38 @@
   z-index: 1;
 }
 
-.resize-handle-se {
+:global(.resize-handle-se) {
   bottom: 0;
   right: 0;
   cursor: nwse-resize;
   transform: translate(50%, 50%);
 }
-.resize-handle-ne {
+:global(.resize-handle-ne) {
   right: 0;
   top: 0;
   cursor: nesw-resize;
   transform: translate(50%, -50%);
 }
-.resize-handle-sw {
+:global(.resize-handle-sw) {
   bottom: 0;
   left: 0;
   cursor: nesw-resize;
   transform: translate(-50%, 50%);
 }
-.resize-handle-nw {
+:global(.resize-handle-nw) {
   top: 0;
   bottom: 0;
   cursor: nwse-resize;
   transform: translate(-50%, -50%);
 }
 
-.DraggableResizable {
+:global(.DraggableResizable) {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.DraggableResizable-controls {
+:global(.DraggableResizable-controls) {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -85,28 +85,27 @@
   width: 1px;
 }
 
-.DraggableResizable-top,
-.DraggableResizable-left,
-.DraggableResizable-bottom,
-.DraggableResizable-right {
+:global(.DraggableResizable-top),
+:global(.DraggableResizable-left),
+:global(.DraggableResizable-bottom),
+:global(.DraggableResizable-right) {
   position: absolute;
   background-color: rgba(0,0,0,.7);
 }
 
-.DraggableResizable-top {
+:global(.DraggableResizable-top) {
   top: 0;
   left: 0;
   right: 0;
 }
-.DraggableResizable-bottom {
+:global(.DraggableResizable-bottom) {
   bottom: 0;
   left: 0;
   right: 0;
 }
-.DraggableResizable-left {
+:global(.DraggableResizable-left) {
   left: 0;
 }
-.DraggableResizable-right {
+:global(.DraggableResizable-right) {
   right: 0;
 }
-
