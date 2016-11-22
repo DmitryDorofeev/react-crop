@@ -30,7 +30,8 @@ exports['default'] = _react2['default'].createClass({
     heightLabel: _react2['default'].PropTypes.string,
     offsetXLabel: _react2['default'].PropTypes.string,
     offsetYLabel: _react2['default'].PropTypes.string,
-    onImageLoaded: _react2['default'].PropTypes.func
+    onImageLoaded: _react2['default'].PropTypes.func,
+    onChange: _react2['default'].PropTypes.func
   },
 
   getDefaultProps: function getDefaultProps() {
@@ -113,6 +114,7 @@ exports['default'] = _react2['default'].createClass({
 
   onChange: function onChange(offset, dimensions) {
     this.setState({ offset: offset, dimensions: dimensions });
+    this.props.onChange && this.props.onChange();
   },
 
   render: function render() {
