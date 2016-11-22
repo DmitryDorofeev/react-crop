@@ -10,11 +10,11 @@ declare module 'react-crop' {
     offsetXLabel?: string;
     offsetYLabel?: string;
     onImageLoaded?(image: HTMLImageElement);
-    onChange?(image: HTMLImageElement): Promise<Blob>;
+    onChange?(image: HTMLImageElement);
   }
   
   class Cropper extends React.Component<ICropperProps, any> {
-    
+    public cropImage(): Promise<Blob>;
   }
   
   export default Cropper;
